@@ -1,24 +1,24 @@
-\# 1. Visão do Produto
+# 1. Visão do Produto
 
 
 
-\## 1.1 Identificação
+## 1.1 Identificação
 
 
 
-\*\*Nome do projeto:\*\* Autonomo Services
+**Nome do projeto:** Autonomo Services
 
 
 
-\*\*Tipo:\*\* SaaS — Software as a Service
+**Tipo:** SaaS — Software as a Service
 
 
 
-\*\*Categoria:\*\* Gestão de serviços
+**Categoria:** Gestão de serviços
 
 
 
-\*\*Status:\*\* Em planejamento e desenvolvimento do MVP
+**Status:** Em planejamento e desenvolvimento do MVP
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-\## 1.2 Descrição do Produto
+## 1.2 Descrição do Produto
 
 
 
@@ -46,7 +46,7 @@ O sistema será desenvolvido inicialmente como uma aplicação web responsiva, p
 
 
 
-\## 1.3 Problema
+## 1.3 Problema
 
 
 
@@ -90,7 +90,7 @@ O Autonomo Services busca centralizar essas atividades em uma única plataforma.
 
 
 
-\## 1.4 Solução Proposta
+## 1.4 Solução Proposta
 
 
 
@@ -162,7 +162,7 @@ O cliente poderá acessar o orçamento através de um link público enviado pelo
 
 
 
-\## 1.5 Público-Alvo
+## 1.5 Público-Alvo
 
 
 
@@ -170,7 +170,7 @@ O público-alvo inicial será composto por profissionais autônomos e pequenas e
 
 
 
-\### Exemplos de segmentos
+### Exemplos de segmentos
 
 
 
@@ -206,11 +206,11 @@ O produto será desenvolvido de forma genérica para que diferentes segmentos po
 
 
 
-\## 1.6 Usuários do Sistema
+## 1.6 Usuários do Sistema
 
 
 
-\### Prestador
+### Prestador
 
 
 
@@ -244,7 +244,7 @@ Entre suas principais atividades estarão:
 
 
 
-\### Cliente
+### Cliente
 
 
 
@@ -278,7 +278,7 @@ O cliente não precisará criar uma conta na plataforma para acessar o orçament
 
 
 
-\## 1.7 Proposta de Valor
+## 1.7 Proposta de Valor
 
 
 
@@ -290,7 +290,7 @@ A proposta central do produto é:
 
 
 
-> \*\*"Gerencie seus serviços desde o orçamento até o pagamento e execução em um único lugar."\*\*
+> **"Gerencie seus serviços desde o orçamento até o pagamento e execução em um único lugar."**
 
 
 
@@ -302,7 +302,7 @@ A plataforma também busca reduzir o risco financeiro do prestador ao permitir d
 
 
 
-\## 1.8 Políticas de Pagamento
+## 1.8 Políticas de Pagamento
 
 
 
@@ -310,7 +310,7 @@ Cada empresa poderá definir como deseja receber pelos serviços.
 
 
 
-\### 1.8.1 Pagamento 100% antecipado
+### 1.8.1 Pagamento 100% antecipado
 
 
 
@@ -342,7 +342,7 @@ Nesse modelo, o serviço somente poderá avançar para o agendamento após a con
 
 
 
-\### 1.8.2 Pagamento com sinal
+### 1.8.2 Pagamento com sinal
 
 
 
@@ -378,7 +378,7 @@ Nesse modelo, o prestador recebe uma entrada antes da execução e o restante se
 
 
 
-\### 1.8.3 Pagamento após o serviço
+### 1.8.3 Pagamento após o serviço
 
 
 
@@ -414,7 +414,7 @@ Nesse modelo, o pagamento será realizado após a execução do serviço.
 
 
 
-\## 1.9 Escopo do MVP
+## 1.9 Escopo do MVP
 
 
 
@@ -422,7 +422,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Empresa e autenticação
+### Empresa e autenticação
 
 
 
@@ -436,7 +436,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Clientes
+### Clientes
 
 
 
@@ -450,7 +450,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Orçamentos
+### Orçamentos
 
 
 
@@ -472,7 +472,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Aprovação
+### Aprovação
 
 
 
@@ -486,7 +486,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Pagamentos
+### Pagamentos
 
 
 
@@ -502,7 +502,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Agenda
+### Agenda
 
 
 
@@ -522,7 +522,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Ordem de Serviço
+### Ordem de Serviço
 
 
 
@@ -542,7 +542,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\### Dashboard
+### Dashboard
 
 
 
@@ -562,7 +562,7 @@ O MVP terá como objetivo validar o fluxo principal de gestão de serviços.
 
 
 
-\## 1.10 Fora do Escopo do MVP
+## 1.10 Fora do Escopo do MVP
 
 
 
@@ -610,7 +610,7 @@ Essas funcionalidades poderão ser avaliadas após a validação do MVP.
 
 
 
-\## 1.11 Visão de Evolução do Produto
+## 1.11 Visão de Evolução do Produto
 
 
 
@@ -666,7 +666,7 @@ A arquitetura do sistema deverá permitir a inclusão de novos módulos sem comp
 
 
 
-\## 1.12 Premissas
+## 1.12 Premissas
 
 
 
@@ -698,7 +698,7 @@ O projeto considera inicialmente as seguintes premissas:
 
 
 
-\## 1.13 Critérios de Sucesso do MVP
+## 1.13 Critérios de Sucesso do MVP
 
 
 
@@ -762,7 +762,7 @@ O principal objetivo da primeira versão será validar se profissionais realment
 
 
 
-\## 1.14 Objetivo de Negócio
+## 1.14 Objetivo de Negócio
 
 
 

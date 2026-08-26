@@ -1,8 +1,8 @@
-\# 2. Requisitos Funcionais
+# 2. Requisitos Funcionais
 
 
 
-\## 2.1 Objetivo
+## 2.1 Objetivo
 
 
 
@@ -18,7 +18,7 @@ Os requisitos serão organizados de acordo com os módulos definidos para o MVP.
 
 
 
-\### Módulos
+### Módulos
 
 
 
@@ -44,33 +44,33 @@ Os requisitos serão organizados de acordo com os módulos definidos para o MVP.
 
 
 
-\# Módulo 1 — Empresa e Usuários
+# Módulo 1 — Empresa e Usuários
 
 
 
-\## RF-001 — Cadastrar empresa
+## RF-001 — Cadastrar empresa
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que um usuário cadastre uma empresa na plataforma.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar acessando a plataforma e ainda não possuir uma empresa cadastrada para aquela conta.
 
 
 
-\*\*Dados mínimos:\*\*
+**Dados mínimos:**
 
 
 
@@ -88,7 +88,7 @@ O usuário deve estar acessando a plataforma e ainda não possuir uma empresa ca
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -110,13 +110,13 @@ O usuário deve estar acessando a plataforma e ainda não possuir uma empresa ca
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A empresa é cadastrada com sucesso e fica disponível para utilização na plataforma.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -126,29 +126,29 @@ Alta
 
 
 
-\## RF-002 — Realizar cadastro de usuário
+## RF-002 — Realizar cadastro de usuário
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que um usuário crie uma conta para acessar a plataforma.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário ainda não deve possuir uma conta cadastrada com o e-mail informado.
 
 
 
-\*\*Dados mínimos:\*\*
+**Dados mínimos:**
 
 
 
@@ -160,7 +160,7 @@ O usuário ainda não deve possuir uma conta cadastrada com o e-mail informado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -182,13 +182,13 @@ O usuário ainda não deve possuir uma conta cadastrada com o e-mail informado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A conta do usuário é criada com sucesso.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -198,29 +198,29 @@ Alta
 
 
 
-\## RF-003 — Realizar login
+## RF-003 — Realizar login
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário autenticado acesse sua conta através de e-mail e senha.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve possuir uma conta cadastrada.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -238,7 +238,7 @@ O usuário deve possuir uma conta cadastrada.
 
 
 
-\*\*Fluxo alternativo:\*\*
+**Fluxo alternativo:**
 
 
 
@@ -254,13 +254,13 @@ Caso as credenciais sejam inválidas:
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O usuário acessa somente os recursos permitidos para sua conta.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -270,29 +270,29 @@ Alta
 
 
 
-\## RF-004 — Encerrar sessão
+## RF-004 — Encerrar sessão
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário encerre sua sessão.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -304,13 +304,13 @@ O usuário deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A sessão do usuário é encerrada com segurança.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -320,29 +320,29 @@ Alta
 
 
 
-\## RF-005 — Recuperar senha
+## RF-005 — Recuperar senha
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário solicite a recuperação de sua senha.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve possuir uma conta cadastrada.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -364,13 +364,13 @@ O usuário deve possuir uma conta cadastrada.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O usuário consegue recuperar o acesso à sua conta.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -380,29 +380,29 @@ Alta
 
 
 
-\## RF-006 — Visualizar perfil
+## RF-006 — Visualizar perfil
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário visualize seus dados cadastrais.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -414,13 +414,13 @@ O usuário deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Os dados do perfil são apresentados ao usuário.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -430,29 +430,29 @@ Média
 
 
 
-\## RF-007 — Editar perfil
+## RF-007 — Editar perfil
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário altere seus dados cadastrais.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -472,13 +472,13 @@ O usuário deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Os dados do perfil são atualizados.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -488,29 +488,29 @@ Média
 
 
 
-\## RF-008 — Visualizar dados da empresa
+## RF-008 — Visualizar dados da empresa
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário visualize os dados da empresa vinculada à sua conta.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar autenticado e possuir uma empresa vinculada.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -522,13 +522,13 @@ O usuário deve estar autenticado e possuir uma empresa vinculada.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Os dados da empresa são apresentados ao usuário.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -538,29 +538,29 @@ Média
 
 
 
-\## RF-009 — Editar dados da empresa
+## RF-009 — Editar dados da empresa
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o usuário autorizado altere os dados da empresa.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Administrador da empresa
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar autenticado e possuir permissão administrativa.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -580,13 +580,13 @@ O usuário deve estar autenticado e possuir permissão administrativa.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Os dados da empresa são atualizados.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -596,29 +596,29 @@ Média
 
 
 
-\## RF-010 — Associar usuário à empresa
+## RF-010 — Associar usuário à empresa
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que um usuário esteja vinculado a uma empresa.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Sistema
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário e a empresa devem existir.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -632,13 +632,13 @@ O usuário e a empresa devem existir.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O usuário possui um vínculo válido com a empresa.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -648,29 +648,29 @@ Alta
 
 
 
-\## RF-011 — Controlar acesso aos dados da empresa
+## RF-011 — Controlar acesso aos dados da empresa
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve garantir que o usuário tenha acesso somente aos dados das empresas às quais possui vínculo e permissão.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Sistema
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O usuário deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -686,13 +686,13 @@ O usuário deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O usuário não consegue acessar dados de empresas às quais não possui autorização.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -702,7 +702,7 @@ Crítica
 
 
 
-\# Resumo do Módulo 1
+# Resumo do Módulo 1
 
 
 
@@ -738,33 +738,33 @@ Crítica
 
 
 
-\# Módulo 2 — Clientes
+# Módulo 2 — Clientes
 
 
 
-\## RF-012 — Cadastrar cliente
+## RF-012 — Cadastrar cliente
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador cadastre um cliente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O prestador deve estar autenticado e possuir uma empresa vinculada.
 
 
 
-\*\*Dados mínimos:\*\*
+**Dados mínimos:**
 
 
 
@@ -782,7 +782,7 @@ O prestador deve estar autenticado e possuir uma empresa vinculada.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -804,13 +804,13 @@ O prestador deve estar autenticado e possuir uma empresa vinculada.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O cliente é cadastrado e fica disponível para utilização nos demais módulos.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -820,29 +820,29 @@ Alta
 
 
 
-\## RF-013 — Consultar clientes
+## RF-013 — Consultar clientes
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador consulte os clientes cadastrados.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O prestador deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -856,13 +856,13 @@ O prestador deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Os clientes da empresa são apresentados ao prestador.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -872,29 +872,29 @@ Alta
 
 
 
-\## RF-014 — Visualizar cliente
+## RF-014 — Visualizar cliente
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador visualize os dados de um cliente específico.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O cliente deve estar cadastrado e vinculado à empresa.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -908,13 +908,13 @@ O cliente deve estar cadastrado e vinculado à empresa.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue visualizar as informações e o histórico do cliente.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -924,29 +924,29 @@ Alta
 
 
 
-\## RF-015 — Editar cliente
+## RF-015 — Editar cliente
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador altere os dados cadastrais de um cliente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O cliente deve existir e estar vinculado à empresa.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -966,13 +966,13 @@ O cliente deve existir e estar vinculado à empresa.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Os dados do cliente são atualizados.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -982,29 +982,29 @@ Média
 
 
 
-\## RF-016 — Consultar histórico do cliente
+## RF-016 — Consultar histórico do cliente
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador consulte o histórico de serviços relacionados a um cliente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O cliente deve possuir registros relacionados à empresa.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1018,13 +1018,13 @@ O cliente deve possuir registros relacionados à empresa.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue consultar o histórico do relacionamento com o cliente.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1034,33 +1034,33 @@ Alta
 
 
 
-\# Módulo 3 — Orçamentos
+# Módulo 3 — Orçamentos
 
 
 
-\## RF-017 — Criar orçamento
+## RF-017 — Criar orçamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador crie um orçamento para um cliente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O cliente deve estar cadastrado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1082,13 +1082,13 @@ O cliente deve estar cadastrado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Um orçamento é criado e associado ao cliente.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1098,29 +1098,29 @@ Crítica
 
 
 
-\## RF-018 — Adicionar itens ao orçamento
+## RF-018 — Adicionar itens ao orçamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador adicione serviços, materiais ou outros itens ao orçamento.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve estar em estado editável.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1138,13 +1138,13 @@ O orçamento deve estar em estado editável.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O item é adicionado ao orçamento e o total é atualizado.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1154,29 +1154,29 @@ Crítica
 
 
 
-\## RF-019 — Gerar link público do orçamento
+## RF-019 — Gerar link público do orçamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador gere um link público para que o cliente possa visualizar o orçamento.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve estar criado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1192,13 +1192,13 @@ O orçamento deve estar criado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Um link público válido é disponibilizado para o orçamento.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1208,29 +1208,29 @@ Crítica
 
 
 
-\## RF-020 — Enviar orçamento ao cliente
+## RF-020 — Enviar orçamento ao cliente
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador utilize o link público do orçamento para encaminhá-lo ao cliente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve possuir um link público.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1244,13 +1244,13 @@ O orçamento deve possuir um link público.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O cliente recebe o acesso ao orçamento.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1260,29 +1260,29 @@ Alta
 
 
 
-\## RF-021 — Consultar orçamentos
+## RF-021 — Consultar orçamentos
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador consulte os orçamentos cadastrados.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O prestador deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1296,13 +1296,13 @@ O prestador deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue acompanhar os orçamentos da empresa.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1312,33 +1312,33 @@ Alta
 
 
 
-\# Módulo 4 — Cliente e Aprovação
+# Módulo 4 — Cliente e Aprovação
 
 
 
-\## RF-022 — Visualizar orçamento através de link público
+## RF-022 — Visualizar orçamento através de link público
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o cliente visualize um orçamento através do link público recebido do prestador.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Cliente
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O link deve ser válido e o orçamento deve estar disponível para visualização.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1352,13 +1352,13 @@ O link deve ser válido e o orçamento deve estar disponível para visualizaçã
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O cliente consegue visualizar o orçamento sem precisar criar uma conta.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1368,29 +1368,29 @@ Crítica
 
 
 
-\## RF-023 — Aprovar orçamento
+## RF-023 — Aprovar orçamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o cliente aprove um orçamento.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Cliente
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve estar válido e disponível para aprovação.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1410,13 +1410,13 @@ O orçamento deve estar válido e disponível para aprovação.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O orçamento é registrado como aprovado.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1426,29 +1426,29 @@ Crítica
 
 
 
-\## RF-024 — Recusar orçamento
+## RF-024 — Recusar orçamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o cliente recuse um orçamento.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Cliente
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve estar disponível para resposta.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1466,13 +1466,13 @@ O orçamento deve estar disponível para resposta.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O orçamento é registrado como recusado.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1482,29 +1482,29 @@ Alta
 
 
 
-\## RF-025 — Registrar resposta do cliente
+## RF-025 — Registrar resposta do cliente
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve registrar a ação realizada pelo cliente sobre o orçamento.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Sistema
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O cliente deve realizar uma ação válida sobre o orçamento.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1520,13 +1520,13 @@ O cliente deve realizar uma ação válida sobre o orçamento.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A resposta do cliente fica registrada no histórico do orçamento.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1536,27 +1536,27 @@ Alta
 
 
 
-\# Módulo 5 — Pagamentos
+# Módulo 5 — Pagamentos
 
 
 
-\## RF-026 — Definir política de pagamento
+## RF-026 — Definir política de pagamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que a empresa defina a política de pagamento aplicável aos seus serviços.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Políticas disponíveis no MVP:\*\*
+**Políticas disponíveis no MVP:**
 
 
 
@@ -1568,7 +1568,7 @@ Prestador
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1582,13 +1582,13 @@ Prestador
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A política de pagamento da empresa é definida.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1598,29 +1598,29 @@ Crítica
 
 
 
-\## RF-027 — Registrar pagamento
+## RF-027 — Registrar pagamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve registrar o pagamento realizado pelo cliente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Sistema
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 Deve existir um orçamento ou serviço com pagamento previsto.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1636,13 +1636,13 @@ Deve existir um orçamento ou serviço com pagamento previsto.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O pagamento é registrado corretamente.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1652,29 +1652,29 @@ Crítica
 
 
 
-\## RF-028 — Controlar pagamento de entrada
+## RF-028 — Controlar pagamento de entrada
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir o controle do pagamento de uma entrada quando a empresa utilizar a política de sinal.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Sistema
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve utilizar a política de pagamento com sinal.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1692,13 +1692,13 @@ O orçamento deve utilizar a política de pagamento com sinal.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A entrada e o saldo restante ficam registrados.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1708,29 +1708,29 @@ Alta
 
 
 
-\## RF-029 — Controlar saldo restante
+## RF-029 — Controlar saldo restante
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir o controle do valor restante após o pagamento parcial.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Sistema
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 Deve existir um pagamento parcial registrado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1744,13 +1744,13 @@ Deve existir um pagamento parcial registrado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O saldo restante é calculado e apresentado corretamente.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1760,33 +1760,33 @@ Alta
 
 
 
-\# Módulo 6 — Agenda
+# Módulo 6 — Agenda
 
 
 
-\## RF-030 — Criar agendamento
+## RF-030 — Criar agendamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador agende a execução de um serviço.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve estar aprovado e as condições necessárias da política de pagamento devem ter sido atendidas.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1804,13 +1804,13 @@ O orçamento deve estar aprovado e as condições necessárias da política de p
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O serviço fica agendado.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -1820,29 +1820,29 @@ Crítica
 
 
 
-\## RF-031 — Consultar agenda
+## RF-031 — Consultar agenda
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador consulte seus serviços agendados.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O prestador deve estar autenticado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1856,13 +1856,13 @@ O prestador deve estar autenticado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue visualizar sua agenda.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1872,29 +1872,29 @@ Alta
 
 
 
-\## RF-032 — Alterar agendamento
+## RF-032 — Alterar agendamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador altere um agendamento existente.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O agendamento deve existir e estar em estado que permita alteração.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1910,13 +1910,13 @@ O agendamento deve existir e estar em estado que permita alteração.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O agendamento é atualizado.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -1926,29 +1926,29 @@ Média
 
 
 
-\## RF-033 — Cancelar agendamento
+## RF-033 — Cancelar agendamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que um agendamento seja cancelado conforme as regras de negócio.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O agendamento deve existir.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -1966,13 +1966,13 @@ O agendamento deve existir.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O agendamento é marcado como cancelado.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -1982,33 +1982,33 @@ Alta
 
 
 
-\# Módulo 7 — Ordem de Serviço
+# Módulo 7 — Ordem de Serviço
 
 
 
-\## RF-034 — Criar ordem de serviço
+## RF-034 — Criar ordem de serviço
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir a criação de uma ordem de serviço a partir de um serviço aprovado e agendado.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 O orçamento deve estar aprovado e o serviço deve estar agendado.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -2024,13 +2024,13 @@ O orçamento deve estar aprovado e o serviço deve estar agendado.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 Uma ordem de serviço é criada.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -2040,29 +2040,29 @@ Crítica
 
 
 
-\## RF-035 — Registrar execução do serviço
+## RF-035 — Registrar execução do serviço
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador registre informações relacionadas à execução do serviço.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 A ordem de serviço deve existir.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -2080,13 +2080,13 @@ A ordem de serviço deve existir.
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 As informações da execução ficam registradas na ordem de serviço.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Alta
 
@@ -2096,29 +2096,29 @@ Alta
 
 
 
-\## RF-036 — Finalizar ordem de serviço
+## RF-036 — Finalizar ordem de serviço
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve permitir que o prestador finalize uma ordem de serviço.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Pré-condições:\*\*  
+**Pré-condições:**  
 
 A ordem de serviço deve estar em execução ou em estado que permita finalização.
 
 
 
-\*\*Fluxo principal:\*\*
+**Fluxo principal:**
 
 
 
@@ -2134,13 +2134,13 @@ A ordem de serviço deve estar em execução ou em estado que permita finalizaç
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 A ordem de serviço é finalizada e permanece disponível no histórico.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Crítica
 
@@ -2150,27 +2150,27 @@ Crítica
 
 
 
-\# Módulo 8 — Dashboard
+# Módulo 8 — Dashboard
 
 
 
-\## RF-037 — Visualizar resumo dos orçamentos
+## RF-037 — Visualizar resumo dos orçamentos
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve apresentar ao prestador um resumo dos orçamentos da empresa.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Informações mínimas:\*\*
+**Informações mínimas:**
 
 
 
@@ -2184,13 +2184,13 @@ Prestador
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue visualizar rapidamente a situação dos seus orçamentos.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -2200,23 +2200,23 @@ Média
 
 
 
-\## RF-038 — Visualizar resumo dos pagamentos
+## RF-038 — Visualizar resumo dos pagamentos
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve apresentar um resumo dos pagamentos relacionados aos serviços.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Informações mínimas:\*\*
+**Informações mínimas:**
 
 
 
@@ -2230,13 +2230,13 @@ Prestador
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue visualizar a situação dos pagamentos.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -2246,29 +2246,29 @@ Média
 
 
 
-\## RF-039 — Visualizar próximos agendamentos
+## RF-039 — Visualizar próximos agendamentos
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve apresentar os próximos serviços agendados.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue visualizar rapidamente seus próximos compromissos.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -2278,29 +2278,29 @@ Média
 
 
 
-\## RF-040 — Visualizar serviços em andamento
+## RF-040 — Visualizar serviços em andamento
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve apresentar os serviços que estão atualmente em execução.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue acompanhar os serviços em andamento.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -2310,29 +2310,29 @@ Média
 
 
 
-\## RF-041 — Visualizar serviços concluídos
+## RF-041 — Visualizar serviços concluídos
 
 
 
-\*\*Descrição:\*\*  
+**Descrição:**  
 
 O sistema deve apresentar os serviços concluídos pela empresa.
 
 
 
-\*\*Ator:\*\*  
+**Ator:**  
 
 Prestador
 
 
 
-\*\*Resultado esperado:\*\*  
+**Resultado esperado:**  
 
 O prestador consegue consultar os serviços finalizados.
 
 
 
-\*\*Prioridade:\*\*  
+**Prioridade:**  
 
 Média
 
@@ -2342,7 +2342,7 @@ Média
 
 
 
-\# Resumo geral dos requisitos funcionais
+# Resumo geral dos requisitos funcionais
 
 
 
@@ -2368,5 +2368,5 @@ Média
 
 
 
-\*\*Total inicial:\*\* 41 requisitos funcionais.
+**Total inicial:** 41 requisitos funcionais.
 
