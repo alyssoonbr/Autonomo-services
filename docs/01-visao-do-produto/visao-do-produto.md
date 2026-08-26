@@ -200,7 +200,7 @@ Nesse modelo, o serviço somente poderá avançar para o agendamento após a con
 
 Fluxo:
 
-```text
+
 Aprovação
     ↓
 Pagamento da entrada
@@ -210,7 +210,7 @@ Agendamento
 Execução
     ↓
 Pagamento do restante
-```
+
 
 Nesse modelo, o prestador recebe uma entrada antes da execução e o restante será pago conforme as condições definidas pela empresa.
 
