@@ -1,0 +1,2 @@
+requisites nao funcionais 
+
