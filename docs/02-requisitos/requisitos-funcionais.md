@@ -1,2372 +1,2374 @@
-# 2. Requisitos Funcionais
+# \# 2. Requisitos Funcionais
 
+# 
 
+# \## 2.1 Objetivo
 
-## 2.1 Objetivo
+# 
 
+# Este documento especifica os requisitos funcionais do Autonomo Services.
 
+# 
 
-Este documento especifica os requisitos funcionais do Autonomo Services.
+# Os requisitos funcionais descrevem as funcionalidades que o sistema deverá disponibilizar aos seus usuários.
 
+# 
 
+# Os requisitos serão organizados de acordo com os módulos definidos para o MVP.
 
-Os requisitos funcionais descrevem as funcionalidades que o sistema deverá disponibilizar aos seus usuários.
+# 
 
+# \### Módulos
 
+# 
 
-Os requisitos serão organizados de acordo com os módulos definidos para o MVP.
+# 1\. Empresa e Usuários
 
+# 2\. Clientes
 
+# 3\. Orçamentos
 
-### Módulos
+# 4\. Cliente e Aprovação
 
+# 5\. Pagamentos
 
+# 6\. Agenda
 
-1\. Empresa e Usuários
+# 7\. Ordem de Serviço
 
-2\. Clientes
+# 8\. Dashboard
 
-3\. Orçamentos
+# 
 
-4\. Cliente e Aprovação
+# \---
 
-5\. Pagamentos
+# 
 
-6\. Agenda
+# \# Módulo 1 — Empresa e Usuários
 
-7\. Ordem de Serviço
+# 
 
-8\. Dashboard
+# \## RF-001 — Cadastrar empresa
 
+# 
 
+# \*\*Descrição:\*\*
 
-\---
+# O sistema deve permitir que um usuário cadastre uma empresa na plataforma.
 
+# 
 
+# \*\*Ator:\*\*
 
-# Módulo 1 — Empresa e Usuários
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-## RF-001 — Cadastrar empresa
+# O usuário deve estar acessando a plataforma e ainda não possuir uma empresa cadastrada para aquela conta.
 
+# 
 
+# \*\*Dados mínimos:\*\*
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que um usuário cadastre uma empresa na plataforma.
+# \* Nome da empresa;
 
+# \* Nome do responsável;
 
+# \* E-mail;
 
-**Ator:**  
+# \* Telefone;
 
-Prestador
+# \* CPF ou CNPJ;
 
+# \* Endereço.
 
+# 
 
-**Pré-condições:**  
+# \*\*Fluxo principal:\*\*
 
-O usuário deve estar acessando a plataforma e ainda não possuir uma empresa cadastrada para aquela conta.
+# 
 
+# 1\. O usuário acessa a opção de cadastro;
 
+# 2\. O sistema apresenta o formulário de cadastro;
 
-**Dados mínimos:**
+# 3\. O usuário informa os dados solicitados;
 
+# 4\. O usuário confirma o cadastro;
 
+# 5\. O sistema valida os dados;
 
-\- Nome da empresa;
+# 6\. O sistema registra a empresa;
 
-\- Nome do responsável;
+# 7\. O sistema associa o usuário à empresa;
 
-\- E-mail;
+# 8\. O sistema apresenta uma confirmação de cadastro.
 
-\- Telefone;
+# 
 
-\- CPF ou CNPJ;
+# \*\*Resultado esperado:\*\*
 
-\- Endereço.
+# A empresa é cadastrada com sucesso e fica disponível para utilização na plataforma.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Fluxo principal:**
+# Alta
 
+# 
 
+# \---
 
-1\. O usuário acessa a opção de cadastro;
+# 
 
-2\. O sistema apresenta o formulário de cadastro;
+# \## RF-002 — Realizar cadastro de usuário
 
-3\. O usuário informa os dados solicitados;
+# 
 
-4\. O usuário confirma o cadastro;
+# \*\*Descrição:\*\*
 
-5\. O sistema valida os dados;
+# O sistema deve permitir que um usuário crie uma conta para acessar a plataforma.
 
-6\. O sistema registra a empresa;
+# 
 
-7\. O sistema associa o usuário à empresa;
+# \*\*Ator:\*\*
 
-8\. O sistema apresenta uma confirmação de cadastro.
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Resultado esperado:**  
+# O usuário ainda não deve possuir uma conta cadastrada com o e-mail informado.
 
-A empresa é cadastrada com sucesso e fica disponível para utilização na plataforma.
+# 
 
+# \*\*Dados mínimos:\*\*
 
+# 
 
-**Prioridade:**  
+# \* Nome;
 
-Alta
+# \* E-mail;
 
+# \* Senha.
 
+# 
 
-\---
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O usuário acessa a tela de cadastro;
 
-## RF-002 — Realizar cadastro de usuário
+# 2\. O sistema apresenta o formulário;
 
+# 3\. O usuário informa seus dados;
 
+# 4\. O usuário confirma o cadastro;
 
-**Descrição:**  
+# 5\. O sistema valida os dados;
 
-O sistema deve permitir que um usuário crie uma conta para acessar a plataforma.
+# 6\. O sistema verifica se o e-mail já está cadastrado;
 
+# 7\. O sistema cria a conta;
 
+# 8\. O sistema informa que o cadastro foi realizado.
 
-**Ator:**  
+# 
 
-Prestador
+# \*\*Resultado esperado:\*\*
 
+# A conta do usuário é criada com sucesso.
 
+# 
 
-**Pré-condições:**  
+# \*\*Prioridade:\*\*
 
-O usuário ainda não deve possuir uma conta cadastrada com o e-mail informado.
+# Alta
 
+# 
 
+# \---
 
-**Dados mínimos:**
+# 
 
+# \## RF-003 — Realizar login
 
+# 
 
-\- Nome;
+# \*\*Descrição:\*\*
 
-\- E-mail;
+# O sistema deve permitir que o usuário autenticado acesse sua conta através de e-mail e senha.
 
-\- Senha.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Fluxo principal:**
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O usuário deve possuir uma conta cadastrada.
 
-1\. O usuário acessa a tela de cadastro;
+# 
 
-2\. O sistema apresenta o formulário;
+# \*\*Fluxo principal:\*\*
 
-3\. O usuário informa seus dados;
+# 
 
-4\. O usuário confirma o cadastro;
+# 1\. O usuário acessa a tela de login;
 
-5\. O sistema valida os dados;
+# 2\. O sistema solicita e-mail e senha;
 
-6\. O sistema verifica se o e-mail já está cadastrado;
+# 3\. O usuário informa suas credenciais;
 
-7\. O sistema cria a conta;
+# 4\. O sistema valida as credenciais;
 
-8\. O sistema informa que o cadastro foi realizado.
+# 5\. O sistema autentica o usuário;
 
+# 6\. O sistema direciona o usuário para a área principal da plataforma.
 
+# 
 
-**Resultado esperado:**  
+# \*\*Fluxo alternativo:\*\*
 
-A conta do usuário é criada com sucesso.
+# 
 
+# Caso as credenciais sejam inválidas:
 
+# 
 
-**Prioridade:**  
+# 1\. O sistema rejeita a autenticação;
 
-Alta
+# 2\. O sistema informa que o e-mail ou senha são inválidos;
 
+# 3\. O usuário pode tentar novamente.
 
+# 
 
-\---
+# \*\*Resultado esperado:\*\*
 
+# O usuário acessa somente os recursos permitidos para sua conta.
 
+# 
 
-## RF-003 — Realizar login
+# \*\*Prioridade:\*\*
 
+# Alta
 
+# 
 
-**Descrição:**  
+# \---
 
-O sistema deve permitir que o usuário autenticado acesse sua conta através de e-mail e senha.
+# 
 
+# \## RF-004 — Encerrar sessão
 
+# 
 
-**Ator:**  
+# \*\*Descrição:\*\*
 
-Prestador
+# O sistema deve permitir que o usuário encerre sua sessão.
 
+# 
 
+# \*\*Ator:\*\*
 
-**Pré-condições:**  
+# Prestador
 
-O usuário deve possuir uma conta cadastrada.
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O usuário deve estar autenticado.
 
-**Fluxo principal:**
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-1\. O usuário acessa a tela de login;
+# 1\. O usuário seleciona a opção de sair;
 
-2\. O sistema solicita e-mail e senha;
+# 2\. O sistema encerra a sessão;
 
-3\. O usuário informa suas credenciais;
+# 3\. O sistema direciona o usuário para a tela de login.
 
-4\. O sistema valida as credenciais;
+# 
 
-5\. O sistema autentica o usuário;
+# \*\*Resultado esperado:\*\*
 
-6\. O sistema direciona o usuário para a área principal da plataforma.
+# A sessão do usuário é encerrada com segurança.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Fluxo alternativo:**
+# Alta
 
+# 
 
+# \---
 
-Caso as credenciais sejam inválidas:
+# 
 
+# \## RF-005 — Recuperar senha
 
+# 
 
-1\. O sistema rejeita a autenticação;
+# \*\*Descrição:\*\*
 
-2\. O sistema informa que o e-mail ou senha são inválidos;
+# O sistema deve permitir que o usuário solicite a recuperação de sua senha.
 
-3\. O usuário pode tentar novamente.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Resultado esperado:**  
+# 
 
-O usuário acessa somente os recursos permitidos para sua conta.
+# \*\*Pré-condições:\*\*
 
+# O usuário deve possuir uma conta cadastrada.
 
+# 
 
-**Prioridade:**  
+# \*\*Fluxo principal:\*\*
 
-Alta
+# 
 
+# 1\. O usuário acessa a opção "Esqueci minha senha";
 
+# 2\. O sistema solicita o e-mail cadastrado;
 
-\---
+# 3\. O usuário informa o e-mail;
 
+# 4\. O sistema verifica a existência da conta;
 
+# 5\. O sistema envia as instruções de recuperação;
 
-## RF-004 — Encerrar sessão
+# 6\. O usuário acessa o mecanismo de recuperação;
 
+# 7\. O usuário define uma nova senha;
 
+# 8\. O sistema atualiza a senha.
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o usuário encerre sua sessão.
+# \*\*Resultado esperado:\*\*
 
+# O usuário consegue recuperar o acesso à sua conta.
 
+# 
 
-**Ator:**  
+# \*\*Prioridade:\*\*
 
-Prestador
+# Alta
 
+# 
 
+# \---
 
-**Pré-condições:**  
+# 
 
-O usuário deve estar autenticado.
+# \## RF-006 — Visualizar perfil
 
+# 
 
+# \*\*Descrição:\*\*
 
-**Fluxo principal:**
+# O sistema deve permitir que o usuário visualize seus dados cadastrais.
 
+# 
 
+# \*\*Ator:\*\*
 
-1\. O usuário seleciona a opção de sair;
+# Prestador
 
-2\. O sistema encerra a sessão;
+# 
 
-3\. O sistema direciona o usuário para a tela de login.
+# \*\*Pré-condições:\*\*
 
+# O usuário deve estar autenticado.
 
+# 
 
-**Resultado esperado:**  
+# \*\*Fluxo principal:\*\*
 
-A sessão do usuário é encerrada com segurança.
+# 
 
+# 1\. O usuário acessa seu perfil;
 
+# 2\. O sistema consulta seus dados;
 
-**Prioridade:**  
+# 3\. O sistema apresenta as informações cadastradas.
 
-Alta
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# Os dados do perfil são apresentados ao usuário.
 
-\---
+# 
 
+# \*\*Prioridade:\*\*
 
+# Média
 
-## RF-005 — Recuperar senha
+# 
 
+# \---
 
+# 
 
-**Descrição:**  
+# \## RF-007 — Editar perfil
 
-O sistema deve permitir que o usuário solicite a recuperação de sua senha.
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o usuário altere seus dados cadastrais.
 
-**Ator:**  
+# 
 
-Prestador
+# \*\*Ator:\*\*
 
+# Prestador
 
+# 
 
-**Pré-condições:**  
+# \*\*Pré-condições:\*\*
 
-O usuário deve possuir uma conta cadastrada.
+# O usuário deve estar autenticado.
 
+# 
 
+# \*\*Fluxo principal:\*\*
 
-**Fluxo principal:**
+# 
 
+# 1\. O usuário acessa seu perfil;
 
+# 2\. O sistema apresenta os dados atuais;
 
-1\. O usuário acessa a opção "Esqueci minha senha";
+# 3\. O usuário altera as informações desejadas;
 
-2\. O sistema solicita o e-mail cadastrado;
+# 4\. O usuário confirma as alterações;
 
-3\. O usuário informa o e-mail;
+# 5\. O sistema valida os dados;
 
-4\. O sistema verifica a existência da conta;
+# 6\. O sistema salva as alterações;
 
-5\. O sistema envia as instruções de recuperação;
+# 7\. O sistema apresenta uma confirmação.
 
-6\. O usuário acessa o mecanismo de recuperação;
+# 
 
-7\. O usuário define uma nova senha;
+# \*\*Resultado esperado:\*\*
 
-8\. O sistema atualiza a senha.
+# Os dados do perfil são atualizados.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Resultado esperado:**  
+# Média
 
-O usuário consegue recuperar o acesso à sua conta.
+# 
 
+# \---
 
+# 
 
-**Prioridade:**  
+# \## RF-008 — Visualizar dados da empresa
 
-Alta
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o usuário visualize os dados da empresa vinculada à sua conta.
 
-\---
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-## RF-006 — Visualizar perfil
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O usuário deve estar autenticado e possuir uma empresa vinculada.
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o usuário visualize seus dados cadastrais.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O usuário acessa as configurações da empresa;
 
-**Ator:**  
+# 2\. O sistema consulta os dados da empresa;
 
-Prestador
+# 3\. O sistema apresenta as informações.
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-**Pré-condições:**  
+# Os dados da empresa são apresentados ao usuário.
 
-O usuário deve estar autenticado.
+# 
 
+# \*\*Prioridade:\*\*
 
+# Média
 
-**Fluxo principal:**
+# 
 
+# \---
 
+# 
 
-1\. O usuário acessa seu perfil;
+# \## RF-009 — Editar dados da empresa
 
-2\. O sistema consulta seus dados;
+# 
 
-3\. O sistema apresenta as informações cadastradas.
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o usuário autorizado altere os dados da empresa.
 
+# 
 
-**Resultado esperado:**  
+# \*\*Ator:\*\*
 
-Os dados do perfil são apresentados ao usuário.
+# Administrador da empresa
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Prioridade:**  
+# O usuário deve estar autenticado e possuir permissão administrativa.
 
-Média
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-\---
+# 1\. O administrador acessa as configurações da empresa;
 
+# 2\. O sistema apresenta os dados atuais;
 
+# 3\. O administrador altera as informações;
 
-## RF-007 — Editar perfil
+# 4\. O administrador confirma as alterações;
 
+# 5\. O sistema valida os dados;
 
+# 6\. O sistema salva as alterações;
 
-**Descrição:**  
+# 7\. O sistema apresenta uma confirmação.
 
-O sistema deve permitir que o usuário altere seus dados cadastrais.
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# Os dados da empresa são atualizados.
 
-**Ator:**  
+# 
 
-Prestador
+# \*\*Prioridade:\*\*
 
+# Média
 
+# 
 
-**Pré-condições:**  
+# \---
 
-O usuário deve estar autenticado.
+# 
 
+# \## RF-010 — Associar usuário à empresa
 
+# 
 
-**Fluxo principal:**
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que um usuário esteja vinculado a uma empresa.
 
+# 
 
-1\. O usuário acessa seu perfil;
+# \*\*Ator:\*\*
 
-2\. O sistema apresenta os dados atuais;
+# Sistema
 
-3\. O usuário altera as informações desejadas;
+# 
 
-4\. O usuário confirma as alterações;
+# \*\*Pré-condições:\*\*
 
-5\. O sistema valida os dados;
+# O usuário e a empresa devem existir.
 
-6\. O sistema salva as alterações;
+# 
 
-7\. O sistema apresenta uma confirmação.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O sistema identifica o usuário;
 
-**Resultado esperado:**  
+# 2\. O sistema identifica a empresa;
 
-Os dados do perfil são atualizados.
+# 3\. O sistema registra o vínculo;
 
+# 4\. O usuário passa a acessar os dados permitidos da empresa.
 
+# 
 
-**Prioridade:**  
+# \*\*Resultado esperado:\*\*
 
-Média
+# O usuário possui um vínculo válido com a empresa.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-\---
+# Alta
 
+# 
 
+# \---
 
-## RF-008 — Visualizar dados da empresa
+# 
 
+# \## RF-011 — Controlar acesso aos dados da empresa
 
+# 
 
-**Descrição:**  
+# \*\*Descrição:\*\*
 
-O sistema deve permitir que o usuário visualize os dados da empresa vinculada à sua conta.
+# O sistema deve garantir que o usuário tenha acesso somente aos dados das empresas às quais possui vínculo e permissão.
 
+# 
 
+# \*\*Ator:\*\*
 
-**Ator:**  
+# Sistema
 
-Prestador
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O usuário deve estar autenticado.
 
-**Pré-condições:**  
+# 
 
-O usuário deve estar autenticado e possuir uma empresa vinculada.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O usuário solicita um recurso;
 
-**Fluxo principal:**
+# 2\. O sistema identifica o usuário autenticado;
 
+# 3\. O sistema identifica a empresa relacionada à solicitação;
 
+# 4\. O sistema verifica as permissões;
 
-1\. O usuário acessa as configurações da empresa;
+# 5\. O sistema permite ou bloqueia o acesso conforme as regras definidas.
 
-2\. O sistema consulta os dados da empresa;
+# 
 
-3\. O sistema apresenta as informações.
+# \*\*Resultado esperado:\*\*
 
+# O usuário não consegue acessar dados de empresas às quais não possui autorização.
 
+# 
 
-**Resultado esperado:**  
+# \*\*Prioridade:\*\*
 
-Os dados da empresa são apresentados ao usuário.
+# Crítica
 
+# 
 
+# \---
 
-**Prioridade:**  
+# 
 
-Média
+# \# Resumo do Módulo 1
 
+# 
 
+# | Código | Requisito                             | Prioridade |
 
-\---
+# | ------ | ------------------------------------- | ---------- |
 
+# | RF-001 | Cadastrar empresa                     | Alta       |
 
+# | RF-002 | Cadastrar usuário                     | Alta       |
 
-## RF-009 — Editar dados da empresa
+# | RF-003 | Realizar login                        | Alta       |
 
+# | RF-004 | Encerrar sessão                       | Alta       |
 
+# | RF-005 | Recuperar senha                       | Alta       |
 
-**Descrição:**  
+# | RF-006 | Visualizar perfil                     | Média      |
 
-O sistema deve permitir que o usuário autorizado altere os dados da empresa.
+# | RF-007 | Editar perfil                         | Média      |
 
+# | RF-008 | Visualizar dados da empresa           | Média      |
 
+# | RF-009 | Editar dados da empresa               | Média      |
 
-**Ator:**  
+# | RF-010 | Associar usuário à empresa            | Alta       |
 
-Administrador da empresa
+# | RF-011 | Controlar acesso aos dados da empresa | Crítica    |
 
+# 
 
+# \---
 
-**Pré-condições:**  
+# 
 
-O usuário deve estar autenticado e possuir permissão administrativa.
+# \# Módulo 2 — Clientes
 
+# 
 
+# \## RF-012 — Cadastrar cliente
 
-**Fluxo principal:**
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador cadastre um cliente.
 
-1\. O administrador acessa as configurações da empresa;
+# 
 
-2\. O sistema apresenta os dados atuais;
+# \*\*Ator:\*\*
 
-3\. O administrador altera as informações;
+# Prestador
 
-4\. O administrador confirma as alterações;
+# 
 
-5\. O sistema valida os dados;
+# \*\*Pré-condições:\*\*
 
-6\. O sistema salva as alterações;
+# O prestador deve estar autenticado e possuir uma empresa vinculada.
 
-7\. O sistema apresenta uma confirmação.
+# 
 
+# \*\*Dados mínimos:\*\*
 
+# 
 
-**Resultado esperado:**  
+# \* Nome;
 
-Os dados da empresa são atualizados.
+# \* Telefone;
 
+# \* E-mail;
 
+# \* CPF ou CNPJ;
 
-**Prioridade:**  
+# \* Endereço;
 
-Média
+# \* Observações.
 
+# 
 
+# \*\*Fluxo principal:\*\*
 
-\---
+# 
 
+# 1\. O prestador acessa o módulo de clientes;
 
+# 2\. Seleciona a opção de cadastrar cliente;
 
-## RF-010 — Associar usuário à empresa
+# 3\. O sistema apresenta o formulário;
 
+# 4\. O prestador informa os dados;
 
+# 5\. O prestador confirma o cadastro;
 
-**Descrição:**  
+# 6\. O sistema valida os dados;
 
-O sistema deve permitir que um usuário esteja vinculado a uma empresa.
+# 7\. O sistema registra o cliente;
 
+# 8\. O sistema apresenta uma confirmação.
 
+# 
 
-**Ator:**  
+# \*\*Resultado esperado:\*\*
 
-Sistema
+# O cliente é cadastrado e fica disponível para utilização nos demais módulos.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Pré-condições:**  
+# Alta
 
-O usuário e a empresa devem existir.
+# 
 
+# \---
 
+# 
 
-**Fluxo principal:**
+# \## RF-013 — Consultar clientes
 
+# 
 
+# \*\*Descrição:\*\*
 
-1\. O sistema identifica o usuário;
+# O sistema deve permitir que o prestador consulte os clientes cadastrados.
 
-2\. O sistema identifica a empresa;
+# 
 
-3\. O sistema registra o vínculo;
+# \*\*Ator:\*\*
 
-4\. O usuário passa a acessar os dados permitidos da empresa.
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Resultado esperado:**  
+# O prestador deve estar autenticado.
 
-O usuário possui um vínculo válido com a empresa.
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-**Prioridade:**  
+# 1\. O prestador acessa o módulo de clientes;
 
-Alta
+# 2\. O sistema consulta os clientes vinculados à empresa;
 
+# 3\. O sistema apresenta a lista de clientes;
 
+# 4\. O prestador pode pesquisar ou filtrar os registros.
 
-\---
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# Os clientes da empresa são apresentados ao prestador.
 
-## RF-011 — Controlar acesso aos dados da empresa
+# 
 
+# \*\*Prioridade:\*\*
 
+# Alta
 
-**Descrição:**  
+# 
 
-O sistema deve garantir que o usuário tenha acesso somente aos dados das empresas às quais possui vínculo e permissão.
+# \---
 
+# 
 
+# \## RF-014 — Visualizar cliente
 
-**Ator:**  
+# 
 
-Sistema
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador visualize os dados de um cliente específico.
 
+# 
 
-**Pré-condições:**  
+# \*\*Ator:\*\*
 
-O usuário deve estar autenticado.
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Fluxo principal:**
+# O cliente deve estar cadastrado e vinculado à empresa.
 
+# 
 
+# \*\*Fluxo principal:\*\*
 
-1\. O usuário solicita um recurso;
+# 
 
-2\. O sistema identifica o usuário autenticado;
+# 1\. O prestador seleciona um cliente;
 
-3\. O sistema identifica a empresa relacionada à solicitação;
+# 2\. O sistema consulta os dados;
 
-4\. O sistema verifica as permissões;
+# 3\. O sistema apresenta as informações cadastrais;
 
-5\. O sistema permite ou bloqueia o acesso conforme as regras definidas.
+# 4\. O sistema apresenta o histórico relacionado ao cliente.
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-**Resultado esperado:**  
+# O prestador consegue visualizar as informações e o histórico do cliente.
 
-O usuário não consegue acessar dados de empresas às quais não possui autorização.
+# 
 
+# \*\*Prioridade:\*\*
 
+# Alta
 
-**Prioridade:**  
+# 
 
-Crítica
+# \---
 
+# 
 
+# \## RF-015 — Editar cliente
 
-\---
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador altere os dados cadastrais de um cliente.
 
-# Resumo do Módulo 1
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-| Código | Requisito | Prioridade |
+# 
 
-|---|---|---|
+# \*\*Pré-condições:\*\*
 
-| RF-001 | Cadastrar empresa | Alta |
+# O cliente deve existir e estar vinculado à empresa.
 
-| RF-002 | Cadastrar usuário | Alta |
+# 
 
-| RF-003 | Realizar login | Alta |
+# \*\*Fluxo principal:\*\*
 
-| RF-004 | Encerrar sessão | Alta |
+# 
 
-| RF-005 | Recuperar senha | Alta |
+# 1\. O prestador acessa o cliente;
 
-| RF-006 | Visualizar perfil | Média |
+# 2\. Seleciona a opção de edição;
 
-| RF-007 | Editar perfil | Média |
+# 3\. O sistema apresenta os dados atuais;
 
-| RF-008 | Visualizar dados da empresa | Média |
+# 4\. O prestador altera as informações;
 
-| RF-009 | Editar dados da empresa | Média |
+# 5\. O prestador confirma;
 
-| RF-010 | Associar usuário à empresa | Alta |
+# 6\. O sistema valida os dados;
 
-| RF-011 | Controlar acesso aos dados da empresa | Crítica |
+# 7\. O sistema salva as alterações.
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-\---
+# Os dados do cliente são atualizados.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-# Módulo 2 — Clientes
+# Média
 
+# 
 
+# \---
 
-## RF-012 — Cadastrar cliente
+# 
 
+# \## RF-016 — Consultar histórico do cliente
 
+# 
 
-**Descrição:**  
+# \*\*Descrição:\*\*
 
-O sistema deve permitir que o prestador cadastre um cliente.
+# O sistema deve permitir que o prestador consulte o histórico de serviços relacionados a um cliente.
 
+# 
 
+# \*\*Ator:\*\*
 
-**Ator:**  
+# Prestador
 
-Prestador
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O cliente deve possuir registros relacionados à empresa.
 
-**Pré-condições:**  
+# 
 
-O prestador deve estar autenticado e possuir uma empresa vinculada.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O prestador acessa o cliente;
 
-**Dados mínimos:**
+# 2\. O sistema consulta os registros relacionados;
 
+# 3\. O sistema apresenta o histórico;
 
+# 4\. O prestador pode consultar os serviços, orçamentos e pagamentos relacionados.
 
-\- Nome;
+# 
 
-\- Telefone;
+# \*\*Resultado esperado:\*\*
 
-\- E-mail;
+# O prestador consegue consultar o histórico do relacionamento com o cliente.
 
-\- CPF ou CNPJ;
+# 
 
-\- Endereço;
+# \*\*Prioridade:\*\*
 
-\- Observações.
+# Alta
 
+# 
 
+# \---
 
-**Fluxo principal:**
+# 
 
+# \# Módulo 3 — Orçamentos
 
+# 
 
-1\. O prestador acessa o módulo de clientes;
+# \## RF-017 — Criar orçamento
 
-2\. Seleciona a opção de cadastrar cliente;
+# 
 
-3\. O sistema apresenta o formulário;
+# \*\*Descrição:\*\*
 
-4\. O prestador informa os dados;
+# O sistema deve permitir que o prestador crie um orçamento para um cliente.
 
-5\. O prestador confirma o cadastro;
+# 
 
-6\. O sistema valida os dados;
+# \*\*Ator:\*\*
 
-7\. O sistema registra o cliente;
+# Prestador
 
-8\. O sistema apresenta uma confirmação.
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O cliente deve estar cadastrado.
 
-**Resultado esperado:**  
+# 
 
-O cliente é cadastrado e fica disponível para utilização nos demais módulos.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O prestador seleciona um cliente;
 
-**Prioridade:**  
+# 2\. O prestador cria um novo orçamento;
 
-Alta
+# 3\. O sistema permite adicionar os itens do serviço;
 
+# 4\. O prestador informa quantidades e valores;
 
+# 5\. O sistema calcula o valor total;
 
-\---
+# 6\. O prestador informa a validade do orçamento;
 
+# 7\. O prestador salva o orçamento;
 
+# 8\. O sistema registra o orçamento.
 
-## RF-013 — Consultar clientes
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# Um orçamento é criado e associado ao cliente.
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o prestador consulte os clientes cadastrados.
+# \*\*Prioridade:\*\*
 
+# Crítica
 
+# 
 
-**Ator:**  
+# \---
 
-Prestador
+# 
 
+# \## RF-018 — Adicionar itens ao orçamento
 
+# 
 
-**Pré-condições:**  
+# \*\*Descrição:\*\*
 
-O prestador deve estar autenticado.
+# O sistema deve permitir que o prestador adicione serviços, materiais ou outros itens ao orçamento.
 
+# 
 
+# \*\*Ator:\*\*
 
-**Fluxo principal:**
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-1\. O prestador acessa o módulo de clientes;
+# O orçamento deve estar em estado editável.
 
-2\. O sistema consulta os clientes vinculados à empresa;
+# 
 
-3\. O sistema apresenta a lista de clientes;
+# \*\*Fluxo principal:\*\*
 
-4\. O prestador pode pesquisar ou filtrar os registros.
+# 
 
+# 1\. O prestador seleciona a opção de adicionar item;
 
+# 2\. Informa a descrição;
 
-**Resultado esperado:**  
+# 3\. Informa quantidade;
 
-Os clientes da empresa são apresentados ao prestador.
+# 4\. Informa valor unitário;
 
+# 5\. O sistema calcula o valor do item;
 
+# 6\. O sistema atualiza o valor total do orçamento.
 
-**Prioridade:**  
+# 
 
-Alta
+# \*\*Resultado esperado:\*\*
 
+# O item é adicionado ao orçamento e o total é atualizado.
 
+# 
 
-\---
+# \*\*Prioridade:\*\*
 
+# Crítica
 
+# 
 
-## RF-014 — Visualizar cliente
+# \---
 
+# 
 
+# \## RF-019 — Gerar link público do orçamento
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o prestador visualize os dados de um cliente específico.
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador gere um link público para que o cliente possa visualizar o orçamento.
 
+# 
 
-**Ator:**  
+# \*\*Ator:\*\*
 
-Prestador
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Pré-condições:**  
+# O orçamento deve estar criado.
 
-O cliente deve estar cadastrado e vinculado à empresa.
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-**Fluxo principal:**
+# 1\. O prestador seleciona o orçamento;
 
+# 2\. Solicita o link público;
 
+# 3\. O sistema gera ou recupera um identificador público;
 
-1\. O prestador seleciona um cliente;
+# 4\. O sistema apresenta o link;
 
-2\. O sistema consulta os dados;
+# 5\. O prestador pode copiar o link para enviá-lo ao cliente.
 
-3\. O sistema apresenta as informações cadastrais;
+# 
 
-4\. O sistema apresenta o histórico relacionado ao cliente.
+# \*\*Resultado esperado:\*\*
 
+# Um link público válido é disponibilizado para o orçamento.
 
+# 
 
-**Resultado esperado:**  
+# \*\*Prioridade:\*\*
 
-O prestador consegue visualizar as informações e o histórico do cliente.
+# Crítica
 
+# 
 
+# \---
 
-**Prioridade:**  
+# 
 
-Alta
+# \## RF-020 — Enviar orçamento ao cliente
 
+# 
 
+# \*\*Descrição:\*\*
 
-\---
+# O sistema deve permitir que o prestador utilize o link público do orçamento para encaminhá-lo ao cliente.
 
+# 
 
+# \*\*Ator:\*\*
 
-## RF-015 — Editar cliente
+# Prestador
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Descrição:**  
+# O orçamento deve possuir um link público.
 
-O sistema deve permitir que o prestador altere os dados cadastrais de um cliente.
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-**Ator:**  
+# 1\. O prestador acessa o orçamento;
 
-Prestador
+# 2\. O sistema apresenta o link;
 
+# 3\. O prestador copia o link;
 
+# 4\. O prestador envia o link ao cliente através do canal de comunicação escolhido.
 
-**Pré-condições:**  
+# 
 
-O cliente deve existir e estar vinculado à empresa.
+# \*\*Resultado esperado:\*\*
 
+# O cliente recebe o acesso ao orçamento.
 
+# 
 
-**Fluxo principal:**
+# \*\*Prioridade:\*\*
 
+# Alta
 
+# 
 
-1\. O prestador acessa o cliente;
+# \---
 
-2\. Seleciona a opção de edição;
+# 
 
-3\. O sistema apresenta os dados atuais;
+# \## RF-021 — Consultar orçamentos
 
-4\. O prestador altera as informações;
+# 
 
-5\. O prestador confirma;
+# \*\*Descrição:\*\*
 
-6\. O sistema valida os dados;
+# O sistema deve permitir que o prestador consulte os orçamentos cadastrados.
 
-7\. O sistema salva as alterações.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Resultado esperado:**  
+# 
 
-Os dados do cliente são atualizados.
+# \*\*Pré-condições:\*\*
 
+# O prestador deve estar autenticado.
 
+# 
 
-**Prioridade:**  
+# \*\*Fluxo principal:\*\*
 
-Média
+# 
 
+# 1\. O prestador acessa o módulo de orçamentos;
 
+# 2\. O sistema apresenta os orçamentos da empresa;
 
-\---
+# 3\. O prestador pode pesquisar e filtrar os registros;
 
+# 4\. O sistema apresenta os resultados.
 
+# 
 
-## RF-016 — Consultar histórico do cliente
+# \*\*Resultado esperado:\*\*
 
+# O prestador consegue acompanhar os orçamentos da empresa.
 
+# 
 
-**Descrição:**  
+# \*\*Prioridade:\*\*
 
-O sistema deve permitir que o prestador consulte o histórico de serviços relacionados a um cliente.
+# Alta
 
+# 
 
+# \---
 
-**Ator:**  
+# 
 
-Prestador
+# \# Módulo 4 — Cliente e Aprovação
 
+# 
 
+# \## RF-022 — Visualizar orçamento através de link público
 
-**Pré-condições:**  
+# 
 
-O cliente deve possuir registros relacionados à empresa.
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o cliente visualize um orçamento através do link público recebido do prestador.
 
+# 
 
-**Fluxo principal:**
+# \*\*Ator:\*\*
 
+# Cliente
 
+# 
 
-1\. O prestador acessa o cliente;
+# \*\*Pré-condições:\*\*
 
-2\. O sistema consulta os registros relacionados;
+# O link deve ser válido e o orçamento deve estar disponível para visualização.
 
-3\. O sistema apresenta o histórico;
+# 
 
-4\. O prestador pode consultar os serviços, orçamentos e pagamentos relacionados.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O cliente acessa o link;
 
-**Resultado esperado:**  
+# 2\. O sistema valida o identificador público;
 
-O prestador consegue consultar o histórico do relacionamento com o cliente.
+# 3\. O sistema apresenta os dados do orçamento;
 
+# 4\. O cliente visualiza os serviços, valores, condições e validade.
 
+# 
 
-**Prioridade:**  
+# \*\*Resultado esperado:\*\*
 
-Alta
+# O cliente consegue visualizar o orçamento sem precisar criar uma conta.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-\---
+# Crítica
 
+# 
 
+# \---
 
-# Módulo 3 — Orçamentos
+# 
 
+# \## RF-023 — Aprovar orçamento
 
+# 
 
-## RF-017 — Criar orçamento
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o cliente aprove um orçamento.
 
+# 
 
-**Descrição:**  
+# \*\*Ator:\*\*
 
-O sistema deve permitir que o prestador crie um orçamento para um cliente.
+# Cliente
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-**Ator:**  
+# O orçamento deve estar válido e disponível para aprovação.
 
-Prestador
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-**Pré-condições:**  
+# 1\. O cliente acessa o orçamento;
 
-O cliente deve estar cadastrado.
+# 2\. O cliente seleciona a opção de aprovação;
 
+# 3\. O sistema solicita confirmação;
 
+# 4\. O cliente confirma a aprovação;
 
-**Fluxo principal:**
+# 5\. O sistema registra a aprovação;
 
+# 6\. O sistema altera o status do orçamento;
 
+# 7\. O sistema direciona o fluxo conforme a política de pagamento definida.
 
-1\. O prestador seleciona um cliente;
+# 
 
-2\. O prestador cria um novo orçamento;
+# \*\*Resultado esperado:\*\*
 
-3\. O sistema permite adicionar os itens do serviço;
+# O orçamento é registrado como aprovado.
 
-4\. O prestador informa quantidades e valores;
+# 
 
-5\. O sistema calcula o valor total;
+# \*\*Prioridade:\*\*
 
-6\. O prestador informa a validade do orçamento;
+# Crítica
 
-7\. O prestador salva o orçamento;
+# 
 
-8\. O sistema registra o orçamento.
+# \---
 
+# 
 
+# \## RF-024 — Recusar orçamento
 
-**Resultado esperado:**  
+# 
 
-Um orçamento é criado e associado ao cliente.
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o cliente recuse um orçamento.
 
+# 
 
-**Prioridade:**  
+# \*\*Ator:\*\*
 
-Crítica
+# Cliente
 
+# 
 
+# \*\*Pré-condições:\*\*
 
-\---
+# O orçamento deve estar disponível para resposta.
 
+# 
 
+# \*\*Fluxo principal:\*\*
 
-## RF-018 — Adicionar itens ao orçamento
+# 
 
+# 1\. O cliente acessa o orçamento;
 
+# 2\. Seleciona a opção de recusar;
 
-**Descrição:**  
+# 3\. O sistema solicita confirmação;
 
-O sistema deve permitir que o prestador adicione serviços, materiais ou outros itens ao orçamento.
+# 4\. O cliente confirma;
 
+# 5\. O sistema registra a recusa;
 
+# 6\. O sistema altera o status do orçamento.
 
-**Ator:**  
+# 
 
-Prestador
+# \*\*Resultado esperado:\*\*
 
+# O orçamento é registrado como recusado.
 
+# 
 
-**Pré-condições:**  
+# \*\*Prioridade:\*\*
 
-O orçamento deve estar em estado editável.
+# Alta
 
+# 
 
+# \---
 
-**Fluxo principal:**
+# 
 
+# \## RF-025 — Registrar resposta do cliente
 
+# 
 
-1\. O prestador seleciona a opção de adicionar item;
+# \*\*Descrição:\*\*
 
-2\. Informa a descrição;
+# O sistema deve registrar a ação realizada pelo cliente sobre o orçamento.
 
-3\. Informa quantidade;
+# 
 
-4\. Informa valor unitário;
+# \*\*Ator:\*\*
 
-5\. O sistema calcula o valor do item;
+# Sistema
 
-6\. O sistema atualiza o valor total do orçamento.
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O cliente deve realizar uma ação válida sobre o orçamento.
 
-**Resultado esperado:**  
+# 
 
-O item é adicionado ao orçamento e o total é atualizado.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O sistema identifica o orçamento;
 
-**Prioridade:**  
+# 2\. Identifica a ação realizada;
 
-Crítica
+# 3\. Registra data e horário;
 
+# 4\. Atualiza o status do orçamento;
 
+# 5\. Mantém o registro para consulta futura.
 
-\---
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# A resposta do cliente fica registrada no histórico do orçamento.
 
-## RF-019 — Gerar link público do orçamento
+# 
 
+# \*\*Prioridade:\*\*
 
+# Alta
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o prestador gere um link público para que o cliente possa visualizar o orçamento.
+# \---
 
+# 
 
+# \# Módulo 5 — Pagamentos
 
-**Ator:**  
+# 
 
-Prestador
+# \## RF-026 — Definir política de pagamento
 
+# 
 
+# \*\*Descrição:\*\*
 
-**Pré-condições:**  
+# O sistema deve permitir que a empresa defina a política de pagamento aplicável aos seus serviços.
 
-O orçamento deve estar criado.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Fluxo principal:**
+# 
 
+# \*\*Políticas disponíveis no MVP:\*\*
 
+# 
 
-1\. O prestador seleciona o orçamento;
+# 1\. Pagamento 100% antecipado;
 
-2\. Solicita o link público;
+# 2\. Pagamento com sinal;
 
-3\. O sistema gera ou recupera um identificador público;
+# 3\. Pagamento após o serviço.
 
-4\. O sistema apresenta o link;
+# 
 
-5\. O prestador pode copiar o link para enviá-lo ao cliente.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O prestador acessa as configurações de pagamento;
 
-**Resultado esperado:**  
+# 2\. Seleciona uma política;
 
-Um link público válido é disponibilizado para o orçamento.
+# 3\. O sistema registra a configuração;
 
+# 4\. A política passa a ser utilizada nos novos orçamentos.
 
+# 
 
-**Prioridade:**  
+# \*\*Resultado esperado:\*\*
 
-Crítica
+# A política de pagamento da empresa é definida.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-\---
+# Crítica
 
+# 
 
+# \---
 
-## RF-020 — Enviar orçamento ao cliente
+# 
 
+# \## RF-027 — Registrar pagamento
 
+# 
 
-**Descrição:**  
+# \*\*Descrição:\*\*
 
-O sistema deve permitir que o prestador utilize o link público do orçamento para encaminhá-lo ao cliente.
+# O sistema deve registrar o pagamento realizado pelo cliente.
 
+# 
 
+# \*\*Ator:\*\*
 
-**Ator:**  
+# Sistema
 
-Prestador
+# 
 
+# \*\*Pré-condições:\*\*
 
+# Deve existir um orçamento ou serviço com pagamento previsto.
 
-**Pré-condições:**  
+# 
 
-O orçamento deve possuir um link público.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O pagamento é processado pelo meio de pagamento utilizado;
 
-**Fluxo principal:**
+# 2\. O sistema recebe a confirmação do pagamento;
 
+# 3\. O sistema identifica o orçamento ou serviço relacionado;
 
+# 4\. O sistema registra o pagamento;
 
-1\. O prestador acessa o orçamento;
+# 5\. O sistema atualiza o status financeiro.
 
-2\. O sistema apresenta o link;
+# 
 
-3\. O prestador copia o link;
+# \*\*Resultado esperado:\*\*
 
-4\. O prestador envia o link ao cliente através do canal de comunicação escolhido.
+# O pagamento é registrado corretamente.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Resultado esperado:**  
+# Crítica
 
-O cliente recebe o acesso ao orçamento.
+# 
 
+# \---
 
+# 
 
-**Prioridade:**  
+# \## RF-028 — Controlar pagamento de entrada
 
-Alta
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir o controle do pagamento de uma entrada quando a empresa utilizar a política de sinal.
 
-\---
+# 
 
+# \*\*Ator:\*\*
 
+# Sistema
 
-## RF-021 — Consultar orçamentos
+# 
 
+# \*\*Pré-condições:\*\*
 
+# O orçamento deve utilizar a política de pagamento com sinal.
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o prestador consulte os orçamentos cadastrados.
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O sistema identifica o valor da entrada;
 
-**Ator:**  
+# 2\. O cliente realiza o pagamento;
 
-Prestador
+# 3\. O sistema recebe a confirmação;
 
+# 4\. O sistema registra a entrada;
 
+# 5\. O sistema calcula o saldo restante;
 
-**Pré-condições:**  
+# 6\. O sistema atualiza o status do pagamento.
 
-O prestador deve estar autenticado.
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# A entrada e o saldo restante ficam registrados.
 
-**Fluxo principal:**
+# 
 
+# \*\*Prioridade:\*\*
 
+# Alta
 
-1\. O prestador acessa o módulo de orçamentos;
+# 
 
-2\. O sistema apresenta os orçamentos da empresa;
+# \---
 
-3\. O prestador pode pesquisar e filtrar os registros;
+# 
 
-4\. O sistema apresenta os resultados.
+# \## RF-029 — Controlar saldo restante
 
+# 
 
+# \*\*Descrição:\*\*
 
-**Resultado esperado:**  
+# O sistema deve permitir o controle do valor restante após o pagamento parcial.
 
-O prestador consegue acompanhar os orçamentos da empresa.
+# 
 
+# \*\*Ator:\*\*
 
+# Sistema
 
-**Prioridade:**  
+# 
 
-Alta
+# \*\*Pré-condições:\*\*
 
+# Deve existir um pagamento parcial registrado.
 
+# 
 
-\---
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O sistema identifica o valor total;
 
-# Módulo 4 — Cliente e Aprovação
+# 2\. Identifica os pagamentos realizados;
 
+# 3\. Calcula o saldo restante;
 
+# 4\. Apresenta o saldo ao prestador.
 
-## RF-022 — Visualizar orçamento através de link público
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# O saldo restante é calculado e apresentado corretamente.
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o cliente visualize um orçamento através do link público recebido do prestador.
+# \*\*Prioridade:\*\*
 
+# Alta
 
+# 
 
-**Ator:**  
+# \---
 
-Cliente
+# 
 
+# \# Módulo 6 — Agenda
 
+# 
 
-**Pré-condições:**  
+# \## RF-030 — Criar agendamento
 
-O link deve ser válido e o orçamento deve estar disponível para visualização.
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador agende a execução de um serviço.
 
-**Fluxo principal:**
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-1\. O cliente acessa o link;
+# 
 
-2\. O sistema valida o identificador público;
+# \*\*Pré-condições:\*\*
 
-3\. O sistema apresenta os dados do orçamento;
+# O orçamento deve estar aprovado e as condições necessárias da política de pagamento devem ter sido atendidas.
 
-4\. O cliente visualiza os serviços, valores, condições e validade.
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-**Resultado esperado:**  
+# 1\. O prestador seleciona o serviço;
 
-O cliente consegue visualizar o orçamento sem precisar criar uma conta.
+# 2\. Seleciona a data;
 
+# 3\. Seleciona o horário;
 
+# 4\. Confirma o endereço;
 
-**Prioridade:**  
+# 5\. Confirma o agendamento;
 
-Crítica
+# 6\. O sistema registra o agendamento.
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-\---
+# O serviço fica agendado.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-## RF-023 — Aprovar orçamento
+# Crítica
 
+# 
 
+# \---
 
-**Descrição:**  
+# 
 
-O sistema deve permitir que o cliente aprove um orçamento.
+# \## RF-031 — Consultar agenda
 
+# 
 
+# \*\*Descrição:\*\*
 
-**Ator:**  
+# O sistema deve permitir que o prestador consulte seus serviços agendados.
 
-Cliente
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Pré-condições:**  
+# 
 
-O orçamento deve estar válido e disponível para aprovação.
+# \*\*Pré-condições:\*\*
 
+# O prestador deve estar autenticado.
 
+# 
 
-**Fluxo principal:**
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O prestador acessa a agenda;
 
-1\. O cliente acessa o orçamento;
+# 2\. O sistema consulta os agendamentos;
 
-2\. O cliente seleciona a opção de aprovação;
+# 3\. O sistema apresenta os serviços;
 
-3\. O sistema solicita confirmação;
+# 4\. O prestador pode visualizar os compromissos por período.
 
-4\. O cliente confirma a aprovação;
+# 
 
-5\. O sistema registra a aprovação;
+# \*\*Resultado esperado:\*\*
 
-6\. O sistema altera o status do orçamento;
+# O prestador consegue visualizar sua agenda.
 
-7\. O sistema direciona o fluxo conforme a política de pagamento definida.
+# 
 
+# \*\*Prioridade:\*\*
 
+# Alta
 
-**Resultado esperado:**  
+# 
 
-O orçamento é registrado como aprovado.
+# \---
 
+# 
 
+# \## RF-032 — Alterar agendamento
 
-**Prioridade:**  
+# 
 
-Crítica
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador altere um agendamento existente.
 
+# 
 
-\---
+# \*\*Ator:\*\*
 
+# Prestador
 
+# 
 
-## RF-024 — Recusar orçamento
+# \*\*Pré-condições:\*\*
 
+# O agendamento deve existir e estar em estado que permita alteração.
 
+# 
 
-**Descrição:**  
+# \*\*Fluxo principal:\*\*
 
-O sistema deve permitir que o cliente recuse um orçamento.
+# 
 
+# 1\. O prestador seleciona o agendamento;
 
+# 2\. Solicita alteração;
 
-**Ator:**  
+# 3\. Altera data, horário ou informações permitidas;
 
-Cliente
+# 4\. Confirma a alteração;
 
+# 5\. O sistema atualiza o agendamento.
 
+# 
 
-**Pré-condições:**  
+# \*\*Resultado esperado:\*\*
 
-O orçamento deve estar disponível para resposta.
+# O agendamento é atualizado.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Fluxo principal:**
+# Média
 
+# 
 
+# \---
 
-1\. O cliente acessa o orçamento;
+# 
 
-2\. Seleciona a opção de recusar;
+# \## RF-033 — Cancelar agendamento
 
-3\. O sistema solicita confirmação;
+# 
 
-4\. O cliente confirma;
+# \*\*Descrição:\*\*
 
-5\. O sistema registra a recusa;
+# O sistema deve permitir que um agendamento seja cancelado conforme as regras de negócio.
 
-6\. O sistema altera o status do orçamento.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Resultado esperado:**  
+# 
 
-O orçamento é registrado como recusado.
+# \*\*Pré-condições:\*\*
 
+# O agendamento deve existir.
 
+# 
 
-**Prioridade:**  
+# \*\*Fluxo principal:\*\*
 
-Alta
+# 
 
+# 1\. O prestador seleciona o agendamento;
 
+# 2\. Solicita cancelamento;
 
-\---
+# 3\. O sistema solicita confirmação;
 
+# 4\. O prestador confirma;
 
+# 5\. O sistema registra o cancelamento;
 
-## RF-025 — Registrar resposta do cliente
+# 6\. O sistema atualiza o status.
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-**Descrição:**  
+# O agendamento é marcado como cancelado.
 
-O sistema deve registrar a ação realizada pelo cliente sobre o orçamento.
+# 
 
+# \*\*Prioridade:\*\*
 
+# Alta
 
-**Ator:**  
+# 
 
-Sistema
+# \---
 
+# 
 
+# \# Módulo 7 — Ordem de Serviço
 
-**Pré-condições:**  
+# 
 
-O cliente deve realizar uma ação válida sobre o orçamento.
+# \## RF-034 — Criar ordem de serviço
 
+# 
 
+# \*\*Descrição:\*\*
 
-**Fluxo principal:**
+# O sistema deve permitir a criação de uma ordem de serviço a partir de um serviço aprovado e agendado.
 
+# 
 
+# \*\*Ator:\*\*
 
-1\. O sistema identifica o orçamento;
+# Prestador
 
-2\. Identifica a ação realizada;
+# 
 
-3\. Registra data e horário;
+# \*\*Pré-condições:\*\*
 
-4\. Atualiza o status do orçamento;
+# O orçamento deve estar aprovado e o serviço deve estar agendado.
 
-5\. Mantém o registro para consulta futura.
+# 
 
+# \*\*Fluxo principal:\*\*
 
+# 
 
-**Resultado esperado:**  
+# 1\. O prestador acessa o serviço;
 
-A resposta do cliente fica registrada no histórico do orçamento.
+# 2\. Solicita a criação da ordem de serviço;
 
+# 3\. O sistema recupera as informações do orçamento;
 
+# 4\. O sistema cria a ordem de serviço;
 
-**Prioridade:**  
+# 5\. O sistema associa a ordem ao cliente e ao serviço.
 
-Alta
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# Uma ordem de serviço é criada.
 
-\---
+# 
 
+# \*\*Prioridade:\*\*
 
+# Crítica
 
-# Módulo 5 — Pagamentos
+# 
 
+# \---
 
+# 
 
-## RF-026 — Definir política de pagamento
+# \## RF-035 — Registrar execução do serviço
 
+# 
 
+# \*\*Descrição:\*\*
 
-**Descrição:**  
+# O sistema deve permitir que o prestador registre informações relacionadas à execução do serviço.
 
-O sistema deve permitir que a empresa defina a política de pagamento aplicável aos seus serviços.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Ator:**  
+# 
 
-Prestador
+# \*\*Pré-condições:\*\*
 
+# A ordem de serviço deve existir.
 
+# 
 
-**Políticas disponíveis no MVP:**
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O prestador acessa a ordem de serviço;
 
-1\. Pagamento 100% antecipado;
+# 2\. Registra informações da execução;
 
-2\. Pagamento com sinal;
+# 3\. Adiciona observações;
 
-3\. Pagamento após o serviço.
+# 4\. Registra materiais utilizados quando aplicável;
 
+# 5\. Adiciona fotos quando aplicável;
 
+# 6\. Salva as informações.
 
-**Fluxo principal:**
+# 
 
+# \*\*Resultado esperado:\*\*
 
+# As informações da execução ficam registradas na ordem de serviço.
 
-1\. O prestador acessa as configurações de pagamento;
+# 
 
-2\. Seleciona uma política;
+# \*\*Prioridade:\*\*
 
-3\. O sistema registra a configuração;
+# Alta
 
-4\. A política passa a ser utilizada nos novos orçamentos.
+# 
 
+# \---
 
+# 
 
-**Resultado esperado:**  
+# \## RF-036 — Finalizar ordem de serviço
 
-A política de pagamento da empresa é definida.
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve permitir que o prestador finalize uma ordem de serviço.
 
-**Prioridade:**  
+# 
 
-Crítica
+# \*\*Ator:\*\*
 
+# Prestador
 
+# 
 
-\---
+# \*\*Pré-condições:\*\*
 
+# A ordem de serviço deve estar em execução ou em estado que permita finalização.
 
+# 
 
-## RF-027 — Registrar pagamento
+# \*\*Fluxo principal:\*\*
 
+# 
 
+# 1\. O prestador acessa a ordem de serviço;
 
-**Descrição:**  
+# 2\. Confirma a conclusão;
 
-O sistema deve registrar o pagamento realizado pelo cliente.
+# 3\. O sistema valida as condições necessárias;
 
+# 4\. O sistema altera o status para concluído;
 
+# 5\. O sistema registra data e horário da conclusão.
 
-**Ator:**  
+# 
 
-Sistema
+# \*\*Resultado esperado:\*\*
 
+# A ordem de serviço é finalizada e permanece disponível no histórico.
 
+# 
 
-**Pré-condições:**  
+# \*\*Prioridade:\*\*
 
-Deve existir um orçamento ou serviço com pagamento previsto.
+# Crítica
 
+# 
 
+# \---
 
-**Fluxo principal:**
+# 
 
+# \# Módulo 8 — Dashboard
 
+# 
 
-1\. O pagamento é processado pelo meio de pagamento utilizado;
+# \## RF-037 — Visualizar resumo dos orçamentos
 
-2\. O sistema recebe a confirmação do pagamento;
+# 
 
-3\. O sistema identifica o orçamento ou serviço relacionado;
+# \*\*Descrição:\*\*
 
-4\. O sistema registra o pagamento;
+# O sistema deve apresentar ao prestador um resumo dos orçamentos da empresa.
 
-5\. O sistema atualiza o status financeiro.
+# 
 
+# \*\*Ator:\*\*
 
+# Prestador
 
-**Resultado esperado:**  
+# 
 
-O pagamento é registrado corretamente.
+# \*\*Informações mínimas:\*\*
 
+# 
 
+# \* Orçamentos pendentes;
 
-**Prioridade:**  
+# \* Orçamentos aprovados;
 
-Crítica
+# \* Orçamentos recusados;
 
+# \* Orçamentos expirados.
 
+# 
 
-\---
+# \*\*Resultado esperado:\*\*
 
+# O prestador consegue visualizar rapidamente a situação dos seus orçamentos.
 
+# 
 
-## RF-028 — Controlar pagamento de entrada
+# \*\*Prioridade:\*\*
 
+# Média
 
+# 
 
-**Descrição:**  
+# \---
 
-O sistema deve permitir o controle do pagamento de uma entrada quando a empresa utilizar a política de sinal.
+# 
 
+# \## RF-038 — Visualizar resumo dos pagamentos
 
+# 
 
-**Ator:**  
+# \*\*Descrição:\*\*
 
-Sistema
+# O sistema deve apresentar um resumo dos pagamentos relacionados aos serviços.
 
+# 
 
+# \*\*Ator:\*\*
 
-**Pré-condições:**  
+# Prestador
 
-O orçamento deve utilizar a política de pagamento com sinal.
+# 
 
+# \*\*Informações mínimas:\*\*
 
+# 
 
-**Fluxo principal:**
+# \* Pagamentos recebidos;
 
+# \* Pagamentos pendentes;
 
+# \* Entradas recebidas;
 
-1\. O sistema identifica o valor da entrada;
+# \* Saldos restantes.
 
-2\. O cliente realiza o pagamento;
+# 
 
-3\. O sistema recebe a confirmação;
+# \*\*Resultado esperado:\*\*
 
-4\. O sistema registra a entrada;
+# O prestador consegue visualizar a situação dos pagamentos.
 
-5\. O sistema calcula o saldo restante;
+# 
 
-6\. O sistema atualiza o status do pagamento.
+# \*\*Prioridade:\*\*
 
+# Média
 
+# 
 
-**Resultado esperado:**  
+# \---
 
-A entrada e o saldo restante ficam registrados.
+# 
 
+# \## RF-039 — Visualizar próximos agendamentos
 
+# 
 
-**Prioridade:**  
+# \*\*Descrição:\*\*
 
-Alta
+# O sistema deve apresentar os próximos serviços agendados.
 
+# 
 
+# \*\*Ator:\*\*
 
-\---
+# Prestador
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-## RF-029 — Controlar saldo restante
+# O prestador consegue visualizar rapidamente seus próximos compromissos.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-**Descrição:**  
+# Média
 
-O sistema deve permitir o controle do valor restante após o pagamento parcial.
+# 
 
+# \---
 
+# 
 
-**Ator:**  
+# \## RF-040 — Visualizar serviços em andamento
 
-Sistema
+# 
 
+# \*\*Descrição:\*\*
 
+# O sistema deve apresentar os serviços que estão atualmente em execução.
 
-**Pré-condições:**  
+# 
 
-Deve existir um pagamento parcial registrado.
+# \*\*Ator:\*\*
 
+# Prestador
 
+# 
 
-**Fluxo principal:**
+# \*\*Resultado esperado:\*\*
 
+# O prestador consegue acompanhar os serviços em andamento.
 
+# 
 
-1\. O sistema identifica o valor total;
+# \*\*Prioridade:\*\*
 
-2\. Identifica os pagamentos realizados;
+# Média
 
-3\. Calcula o saldo restante;
+# 
 
-4\. Apresenta o saldo ao prestador.
+# \---
 
+# 
 
+# \## RF-041 — Visualizar serviços concluídos
 
-**Resultado esperado:**  
+# 
 
-O saldo restante é calculado e apresentado corretamente.
+# \*\*Descrição:\*\*
 
+# O sistema deve apresentar os serviços concluídos pela empresa.
 
+# 
 
-**Prioridade:**  
+# \*\*Ator:\*\*
 
-Alta
+# Prestador
 
+# 
 
+# \*\*Resultado esperado:\*\*
 
-\---
+# O prestador consegue consultar os serviços finalizados.
 
+# 
 
+# \*\*Prioridade:\*\*
 
-# Módulo 6 — Agenda
+# Média
 
+# 
 
+# \---
 
-## RF-030 — Criar agendamento
+# 
 
+# \# Resumo geral dos requisitos funcionais
 
+# 
 
-**Descrição:**  
+# | Módulo              | Requisitos      |
 
-O sistema deve permitir que o prestador agende a execução de um serviço.
+# | ------------------- | --------------- |
 
+# | Empresa e Usuários  | RF-001 a RF-011 |
 
+# | Clientes            | RF-012 a RF-016 |
 
-**Ator:**  
+# | Orçamentos          | RF-017 a RF-021 |
 
-Prestador
+# | Cliente e Aprovação | RF-022 a RF-025 |
 
+# | Pagamentos          | RF-026 a RF-029 |
 
+# | Agenda              | RF-030 a RF-033 |
 
-**Pré-condições:**  
+# | Ordem de Serviço    | RF-034 a RF-036 |
 
-O orçamento deve estar aprovado e as condições necessárias da política de pagamento devem ter sido atendidas.
+# | Dashboard           | RF-037 a RF-041 |
 
+# 
 
+# \*\*Total inicial:\*\* 41 requisitos funcionais.
 
-**Fluxo principal:**
 
-
-
-1\. O prestador seleciona o serviço;
-
-2\. Seleciona a data;
-
-3\. Seleciona o horário;
-
-4\. Confirma o endereço;
-
-5\. Confirma o agendamento;
-
-6\. O sistema registra o agendamento.
-
-
-
-**Resultado esperado:**  
-
-O serviço fica agendado.
-
-
-
-**Prioridade:**  
-
-Crítica
-
-
-
-\---
-
-
-
-## RF-031 — Consultar agenda
-
-
-
-**Descrição:**  
-
-O sistema deve permitir que o prestador consulte seus serviços agendados.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Pré-condições:**  
-
-O prestador deve estar autenticado.
-
-
-
-**Fluxo principal:**
-
-
-
-1\. O prestador acessa a agenda;
-
-2\. O sistema consulta os agendamentos;
-
-3\. O sistema apresenta os serviços;
-
-4\. O prestador pode visualizar os compromissos por período.
-
-
-
-**Resultado esperado:**  
-
-O prestador consegue visualizar sua agenda.
-
-
-
-**Prioridade:**  
-
-Alta
-
-
-
-\---
-
-
-
-## RF-032 — Alterar agendamento
-
-
-
-**Descrição:**  
-
-O sistema deve permitir que o prestador altere um agendamento existente.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Pré-condições:**  
-
-O agendamento deve existir e estar em estado que permita alteração.
-
-
-
-**Fluxo principal:**
-
-
-
-1\. O prestador seleciona o agendamento;
-
-2\. Solicita alteração;
-
-3\. Altera data, horário ou informações permitidas;
-
-4\. Confirma a alteração;
-
-5\. O sistema atualiza o agendamento.
-
-
-
-**Resultado esperado:**  
-
-O agendamento é atualizado.
-
-
-
-**Prioridade:**  
-
-Média
-
-
-
-\---
-
-
-
-## RF-033 — Cancelar agendamento
-
-
-
-**Descrição:**  
-
-O sistema deve permitir que um agendamento seja cancelado conforme as regras de negócio.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Pré-condições:**  
-
-O agendamento deve existir.
-
-
-
-**Fluxo principal:**
-
-
-
-1\. O prestador seleciona o agendamento;
-
-2\. Solicita cancelamento;
-
-3\. O sistema solicita confirmação;
-
-4\. O prestador confirma;
-
-5\. O sistema registra o cancelamento;
-
-6\. O sistema atualiza o status.
-
-
-
-**Resultado esperado:**  
-
-O agendamento é marcado como cancelado.
-
-
-
-**Prioridade:**  
-
-Alta
-
-
-
-\---
-
-
-
-# Módulo 7 — Ordem de Serviço
-
-
-
-## RF-034 — Criar ordem de serviço
-
-
-
-**Descrição:**  
-
-O sistema deve permitir a criação de uma ordem de serviço a partir de um serviço aprovado e agendado.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Pré-condições:**  
-
-O orçamento deve estar aprovado e o serviço deve estar agendado.
-
-
-
-**Fluxo principal:**
-
-
-
-1\. O prestador acessa o serviço;
-
-2\. Solicita a criação da ordem de serviço;
-
-3\. O sistema recupera as informações do orçamento;
-
-4\. O sistema cria a ordem de serviço;
-
-5\. O sistema associa a ordem ao cliente e ao serviço.
-
-
-
-**Resultado esperado:**  
-
-Uma ordem de serviço é criada.
-
-
-
-**Prioridade:**  
-
-Crítica
-
-
-
-\---
-
-
-
-## RF-035 — Registrar execução do serviço
-
-
-
-**Descrição:**  
-
-O sistema deve permitir que o prestador registre informações relacionadas à execução do serviço.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Pré-condições:**  
-
-A ordem de serviço deve existir.
-
-
-
-**Fluxo principal:**
-
-
-
-1\. O prestador acessa a ordem de serviço;
-
-2\. Registra informações da execução;
-
-3\. Adiciona observações;
-
-4\. Registra materiais utilizados quando aplicável;
-
-5\. Adiciona fotos quando aplicável;
-
-6\. Salva as informações.
-
-
-
-**Resultado esperado:**  
-
-As informações da execução ficam registradas na ordem de serviço.
-
-
-
-**Prioridade:**  
-
-Alta
-
-
-
-\---
-
-
-
-## RF-036 — Finalizar ordem de serviço
-
-
-
-**Descrição:**  
-
-O sistema deve permitir que o prestador finalize uma ordem de serviço.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Pré-condições:**  
-
-A ordem de serviço deve estar em execução ou em estado que permita finalização.
-
-
-
-**Fluxo principal:**
-
-
-
-1\. O prestador acessa a ordem de serviço;
-
-2\. Confirma a conclusão;
-
-3\. O sistema valida as condições necessárias;
-
-4\. O sistema altera o status para concluído;
-
-5\. O sistema registra data e horário da conclusão.
-
-
-
-**Resultado esperado:**  
-
-A ordem de serviço é finalizada e permanece disponível no histórico.
-
-
-
-**Prioridade:**  
-
-Crítica
-
-
-
-\---
-
-
-
-# Módulo 8 — Dashboard
-
-
-
-## RF-037 — Visualizar resumo dos orçamentos
-
-
-
-**Descrição:**  
-
-O sistema deve apresentar ao prestador um resumo dos orçamentos da empresa.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Informações mínimas:**
-
-
-
-\- Orçamentos pendentes;
-
-\- Orçamentos aprovados;
-
-\- Orçamentos recusados;
-
-\- Orçamentos expirados.
-
-
-
-**Resultado esperado:**  
-
-O prestador consegue visualizar rapidamente a situação dos seus orçamentos.
-
-
-
-**Prioridade:**  
-
-Média
-
-
-
-\---
-
-
-
-## RF-038 — Visualizar resumo dos pagamentos
-
-
-
-**Descrição:**  
-
-O sistema deve apresentar um resumo dos pagamentos relacionados aos serviços.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Informações mínimas:**
-
-
-
-\- Pagamentos recebidos;
-
-\- Pagamentos pendentes;
-
-\- Entradas recebidas;
-
-\- Saldos restantes.
-
-
-
-**Resultado esperado:**  
-
-O prestador consegue visualizar a situação dos pagamentos.
-
-
-
-**Prioridade:**  
-
-Média
-
-
-
-\---
-
-
-
-## RF-039 — Visualizar próximos agendamentos
-
-
-
-**Descrição:**  
-
-O sistema deve apresentar os próximos serviços agendados.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Resultado esperado:**  
-
-O prestador consegue visualizar rapidamente seus próximos compromissos.
-
-
-
-**Prioridade:**  
-
-Média
-
-
-
-\---
-
-
-
-## RF-040 — Visualizar serviços em andamento
-
-
-
-**Descrição:**  
-
-O sistema deve apresentar os serviços que estão atualmente em execução.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Resultado esperado:**  
-
-O prestador consegue acompanhar os serviços em andamento.
-
-
-
-**Prioridade:**  
-
-Média
-
-
-
-\---
-
-
-
-## RF-041 — Visualizar serviços concluídos
-
-
-
-**Descrição:**  
-
-O sistema deve apresentar os serviços concluídos pela empresa.
-
-
-
-**Ator:**  
-
-Prestador
-
-
-
-**Resultado esperado:**  
-
-O prestador consegue consultar os serviços finalizados.
-
-
-
-**Prioridade:**  
-
-Média
-
-
-
-\---
-
-
-
-# Resumo geral dos requisitos funcionais
-
-
-
-| Módulo | Requisitos |
-
-|---|---|
-
-| Empresa e Usuários | RF-001 a RF-011 |
-
-| Clientes | RF-012 a RF-016 |
-
-| Orçamentos | RF-017 a RF-021 |
-
-| Cliente e Aprovação | RF-022 a RF-025 |
-
-| Pagamentos | RF-026 a RF-029 |
-
-| Agenda | RF-030 a RF-033 |
-
-| Ordem de Serviço | RF-034 a RF-036 |
-
-| Dashboard | RF-037 a RF-041 |
-
-
-
-**Total inicial:** 41 requisitos funcionais.
 
