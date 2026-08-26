@@ -711,15 +711,15 @@ Fluxo:
 
 Aprovação
 
-&#x20;  ↓
+  ↓
 
 Pagamento
 
-&#x20;  ↓
+  ↓
 
 Agendamento
 
-&#x20;  ↓
+  ↓
 
 Execução
 
@@ -743,19 +743,19 @@ Fluxo:
 
 Aprovação
 
-&#x20;  ↓
+ ↓
 
 Pagamento da entrada
 
-&#x20;  ↓
+ ↓
 
 Agendamento
 
-&#x20;  ↓
+ ↓
 
 Execução
 
-&#x20;  ↓
+ ↓
 
 Pagamento do restante
 
@@ -779,15 +779,15 @@ Fluxo:
 
 Aprovação
 
-&#x20;  ↓
+ ↓
 
 Agendamento
 
-&#x20;  ↓
+ ↓
 
 Execução
 
-&#x20;  ↓
+ ↓
 
 Pagamento
 
@@ -1099,43 +1099,43 @@ O MVP será considerado funcional quando um prestador conseguir realizar o fluxo
 
 Cadastrar empresa
 
-&#x20;      ↓
+      ↓
 
 Cadastrar cliente
 
-&#x20;      ↓
+      ↓
 
 Criar orçamento
 
-&#x20;      ↓
+      ↓
 
 Enviar link
 
-&#x20;      ↓
+     ↓
 
 Cliente acessa
 
-&#x20;      ↓
+      ↓
 
 Cliente aprova
 
-&#x20;      ↓
+      ↓
 
 Pagamento conforme política
 
-&#x20;      ↓
+      ↓
 
 Agendamento
 
-&#x20;      ↓
+      ↓
 
 Ordem de Serviço
 
-&#x20;      ↓
+      ↓
 
 Execução
 
-&#x20;      ↓
+      ↓
 
 Conclusão
 
